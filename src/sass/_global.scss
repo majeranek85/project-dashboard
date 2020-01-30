@@ -1,0 +1,38 @@
+/* Global */
+
+body {
+  font-family: $font-main;
+  font-weight: 300;
+  color: $color-dark;
+}
+
+h1 {
+  font-size: $base-size + 2;
+  text-transform: uppercase;
+  color: #a6a6a6;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: $base-size + 2;
+  color: #a6a6a6;
+  font-weight: 700; 
+}
+
+p {
+  font-size: $base-size;
+  font-family: $font-main;
+}
+
+a {
+  color: $color-blue;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-main;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
