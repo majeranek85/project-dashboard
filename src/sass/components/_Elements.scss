@@ -1,0 +1,126 @@
+/* Buttons */
+@mixin btn($color-bg, $color-hov, $wd) {
+  width: $wd;
+  height: 40px;
+  background: $color-bg;
+  text-align: center;
+  border-radius: 2px;
+  color: $color-light;
+  font-size: $base-size + 4;
+  display: inline-block;
+
+  &:hover {
+    color: $color-light;
+    background: $color-hov;
+  }
+}
+
+@mixin center() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-primary {
+  @include btn ($color-main, $color-main-hov, 126px);
+  position: relative;
+
+  span {
+    @include center;
+    width: 100%;
+  }
+}
+
+.btn-secondary {
+  @include btn ($color-darkgray, $color-gray, 126px);
+  position: relative;
+
+  span {
+    @include center;
+    width: 100%;
+  }
+}
+
+.btn-disabled {
+  @include btn ($color-lightgray, $color-lightgray, 200px);
+  position: relative;
+
+  div{
+    @include center;
+    display: flex;
+
+    span:first-of-type {
+      flex: 0 0 20%;
+      
+    }
+  
+    span:last-of-type {
+      flex: 0 0 80%;
+      padding-left: 5px;
+    }
+  }
+}
+
+.btn-refresh {
+  @include btn ($color-main, $color-main-hov, 40px);
+  position: relative;
+
+  span {
+    @include center;
+    width: 100%;
+  }
+}
+
+/* Iputs */
+
+.element--calendar {
+  display: inline-flex;
+
+  a {
+    margin-left: 3px;
+  }
+}
+.calendar-input-wrapper{
+  border: 1px solid $color-gray;
+  border-radius: 2px;
+  position: relative;
+  height: 20px;
+  min-width: 325px;
+  display: inline-flex;
+  padding: 10px;
+
+  label {
+    display: none;
+  }
+
+  input {
+    padding-left: 10px;
+  }
+
+  input:first-of-type {
+    flex: 2;
+    border-width: 0 1px 0 0;
+    border-color: $color-gray;
+
+  }
+
+  input:last-of-type {
+    flex: 2;
+    border: 0;
+  }
+
+  span {
+    flex: 1;
+    position: relative;
+    width: 40px;
+
+    i{
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      color: $color-gray;
+    }
+  }
+}
