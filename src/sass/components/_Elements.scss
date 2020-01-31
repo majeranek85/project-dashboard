@@ -5,17 +5,17 @@
 }
 
 .btn-primary {
-  @include btn ($color-main, $color-main-hov, 126px);
+  @include btn ($color-main, $color-main-hov, $color-light, $color-light, 126px);
 }
 
 .btn-secondary {
-  @include btn ($color-darkgray, $color-gray, 126px);
+  @include btn ($color-darkgray, $color-gray, $color-light, $color-light, 126px);
 }
 
 .btn-disabled {
-  @include btn ($color-lightgray, $color-lightgray, 200px);
+  @include btn ($color-lightgray, $color-lightgray, $color-light, $color-light, 200px);
 
-  div{
+  div {
     display: flex;
 
     span:first-of-type {
@@ -38,6 +38,10 @@
   text-align: center;
   border-radius: $radius-sm;
   color: $color-light;
+
+  &:hover {
+    background: $color-main-hov;
+  }
 }
 
 /* Inputs */
@@ -133,9 +137,8 @@
 
 /* Tabs */
 .tab {
-  @include btn ($color-lightgray, $color-lightgray, 40px);
-  color: $color-gray;
-  position: relative;
+  @include btn (#fff, $color-lightgray, $color-gray, $color-gray, 40px);
+    position: relative;
 
   span {
     width: 100%;
@@ -150,7 +153,11 @@
     content: '';
     width: 20px;
     height: 20px;
-    border-radius: $radius-cicrcle;
+    border-radius: $radius-circle;
     background: #80bfca;
+  }
+
+  &:active {
+    background: $color-lightgray;
   }
 }
