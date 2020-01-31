@@ -15,6 +15,32 @@
   }
 }
 
+@mixin tabs($bg) {
+  @include btn (#fff, $color-lightgray, $color-gray, $color-gray, 40px);
+  position: relative;
+
+  span {
+    width: 100%;
+    padding-left: 40px;
+  }
+
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: $radius-circle;
+    background: $bg;
+  }
+
+  &:active {
+    background: $color-lightgray;
+  }
+}
+
 @mixin center() {
   position: absolute;
   left: 50%;

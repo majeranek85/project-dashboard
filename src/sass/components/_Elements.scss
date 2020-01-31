@@ -136,28 +136,10 @@
 }
 
 /* Tabs */
-.tab {
-  @include btn (#fff, $color-lightgray, $color-gray, $color-gray, 40px);
-    position: relative;
+.tab-one{
+  @include tabs(#80bfca);
+}
 
-  span {
-    width: 100%;
-    padding-left: 40px;
-  }
-
-  &:after {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    content: '';
-    width: 20px;
-    height: 20px;
-    border-radius: $radius-circle;
-    background: #80bfca;
-  }
-
-  &:active {
-    background: $color-lightgray;
-  }
+.tab-two {
+  @include tabs($color-main);
 }
