@@ -4,6 +4,13 @@ body {
   font-family: $font-main;
   font-weight: 300;
   color: $color-dark;
+  margin: 0
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 h1 {
@@ -31,6 +38,10 @@ a {
   &:hover {
     color: $color-main;
   }
+}
+
+input {
+  cursor: pointer;
 }
 
 ul {

@@ -1,58 +1,25 @@
 /* Buttons */
-@mixin btn($color-bg, $color-hov, $wd) {
-  width: $wd;
-  height: 40px;
-  background: $color-bg;
-  text-align: center;
-  border-radius: 2px;
-  color: $color-light;
-  font-size: $base-size + 4;
-  display: inline-block;
-
-  &:hover {
-    color: $color-light;
-    background: $color-hov;
-  }
-}
-
-@mixin center() {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.no-spacing {
+  margin: 0;
+  padding: 0;
 }
 
 .btn-primary {
   @include btn ($color-main, $color-main-hov, 126px);
-  position: relative;
-
-  span {
-    @include center;
-    width: 100%;
-  }
 }
 
 .btn-secondary {
   @include btn ($color-darkgray, $color-gray, 126px);
-  position: relative;
-
-  span {
-    @include center;
-    width: 100%;
-  }
 }
 
 .btn-disabled {
   @include btn ($color-lightgray, $color-lightgray, 200px);
-  position: relative;
 
   div{
-    @include center;
     display: flex;
 
     span:first-of-type {
       flex: 0 0 20%;
-      
     }
   
     span:last-of-type {
@@ -62,17 +29,18 @@
   }
 }
 
-.btn-refresh {
-  @include btn ($color-main, $color-main-hov, 40px);
-  position: relative;
-
-  span {
-    @include center;
-    width: 100%;
-  }
+.icon-refresh {
+  width: 20px;
+  height: 20px;
+  background: $color-main;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  border-radius: $radius-sm;
+  color: $color-light;
 }
 
-/* Iputs */
+/* Inputs */
 
 .element--calendar {
   display: inline-flex;
@@ -81,9 +49,10 @@
     margin-left: 3px;
   }
 }
-.calendar-input-wrapper{
+
+.calendar-input-wrapper {
   border: 1px solid $color-gray;
-  border-radius: 2px;
+  border-radius: $radius-sm;
   position: relative;
   height: 20px;
   min-width: 325px;
@@ -102,7 +71,6 @@
     flex: 2;
     border-width: 0 1px 0 0;
     border-color: $color-gray;
-
   }
 
   input:last-of-type {
@@ -122,5 +90,67 @@
       transform: translateY(-50%);
       color: $color-gray;
     }
+  }
+
+  &:hover {
+    border-color: $color-dark;
+
+    i {
+      color: $color-dark;
+    }
+  }
+}
+
+/* List */
+.element--list {
+  width: 400px;
+
+  li {
+    display: flex;
+    border-bottom: 1px solid $color-gray;
+
+    h2 {
+      flex: 0 0 80%;
+      margin: 0;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.list-widget {
+  flex: 0 0 20%;
+  width: 40px;
+  label{
+    display: none;
+  }
+
+  input {
+    border: none;
+    width: 100%;
+    text-align: end;
+  }
+}
+
+/* Tabs */
+.tab {
+  @include btn ($color-lightgray, $color-lightgray, 40px);
+  color: $color-gray;
+  position: relative;
+
+  span {
+    width: 100%;
+    padding-left: 40px;
+  }
+
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: $radius-cicrcle;
+    background: #80bfca;
   }
 }

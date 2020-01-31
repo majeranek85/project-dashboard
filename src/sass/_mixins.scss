@@ -1,0 +1,23 @@
+@mixin btn($color-bg, $color-hov, $min-wd) {
+  min-width: $min-wd;
+  height: 20px;
+  background: $color-bg;
+  text-align: center;
+  border-radius: $radius-sm;
+  color: $color-light;
+  font-size: $base-size + 4;
+  display: inline-block;
+  padding: 10px;
+
+  &:hover {
+    color: $color-light;
+    background: $color-hov;
+  }
+}
+
+@mixin center() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
