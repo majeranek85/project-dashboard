@@ -4,88 +4,126 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>styleguide</title>
+    <title>Project dashboard</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="images/icon-font/css/Glyphter.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  
+
   <body>
-    <div class="container">
-      <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id. Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
-      <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-      <ul>
-        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-      </ul>
-      <ol>
-        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-      </ol>
-  
-      <a class="btn-primary" href="#">+ add new</a>
-      <a class="btn-secondary" href="#">+ add new</a>
-      <a class="btn-disabled" href="#"><div><span><i class="icon-links"></i></span><span>Copy link</span></div></a>
-      <a class="btn-refresh"><i class="icon-refresh"></i></a>
-      <br><br>
-      <a class="tab" href="#"><span>Signups</span></a>
-      <br><br>
-  
-  
-      <div class="element--calendar">
-        <div class="calendar-input-wrapper">
-          <label>Calendar:</label>
-          <input class="input--calendar" type="date" value="2020-01-31">
-          <input class="input--calendar" type="date" value="2020-01-31">
-          <span><a href="#"><i class="icon-calendar"></i></a></span>
-        </div>
-        <a class="btn-refresh"><i class="icon-refresh"></i></a>
-      </div>
-      <br><br>
-  
-      <ul class="element--list">
-        <li>
-          <h2>Line header</h2>
-          <div class="list-widget">
-            <label>amount</label>
-            <input type="text" value="123">
+
+      <header class="header">
+
+          <div class="header--topbar">
+   
           </div>
-        </li>
-      </ul>
-      <br><br>
-  
-      <table class="element--table">
-        <tr>
-          <td>
-            <h2>Home page</h2>
-          </td>
-          <td>
-            <a href="#">http://www.homepage.com</a>
-          </td>
-          <td>
-            <a href="#"><i class="icon-links"></i></a>
-            <a href="#"><i class=""></i></a></td>
-        </tr>
-        <tr>
-          <td>
-            <h2>Home page</h2>
-          </td>
-          <td>
-            <a href="#">http://www.homepage.com</a>
-          </td>
-          <td>
-            <a href="#"><i class="icon-links"></i></a>
-            <a href="#"><i class=""></i></a></td>
-        </tr>
-      </table>
-      <br><br>
-  
+
+      </header>
+
+      <aside class="menu-aside active">
+        <div class="logo">
+          <h1>Just do it</h1>
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+
+        <nav class="menu--sidebar">
+          <ul class="menu-list">
+            <li class="list-item"><a href="#"><i class="icon-general"></i>General</a></li>
+            <li class="list-item"><a href="#"><i class="icon-details"></i>Details</a></li>
+            <li class="list-item"><a href="#"><i class="icon-links"></i>Links</a></li>
+            <li class="list-item"><a href="#"><i class="icon-banners"></i>Banners</a></li>
+            <li class="list-item"><a href="#"><i class="icon-personaldata"></i>Personal data</a></li>
+            <li class="list-item"><a href="#"><i class="icon-payout"></i>Payout</a></li>
+            <li class="list-item"><a href="#"><i class="icon-postback"></i>Postback</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <div class="page-wrapper">
+
+          <section class="general-stat">
+            <div class="section-title">
+              <h1>General statistic</h1>
+            </div>
+
+            <div class="calendar-wrapper">
+              <div class="element--calendar">
+                <div class="calendar-input-wrapper">
+                  <label>Calendar:</label>
+                  <input class="input--calendar" type="date" value="2020-01-31">
+                  <input class="input--calendar" type="date" value="2020-01-31">
+                  <span><a href="#"><i class="icon-calendar"></i></a></span>
+                </div>
+                <a class="btn-refresh"><i class="icon-refresh"></i></a>
+              </div>
+            </div>
+
+            <div class="element--list">
+              <ul class="list">
+                <li class="list-item">
+                  <div class="list-item-inner">
+                    <h2>Line header</h2>
+                    <div class="list-widget">
+                      <label>amount</label>
+                      <input type="text" value="123">
+                    </div>
+                  </div>
+                </li>
+
+
+                <li class="list-item">
+                  <div class="list-item-inner">
+                    <h2>Line header</h2>
+                    <div class="list-widget">
+                      <label>amount</label>
+                      <input type="text" value="123">
+                    </div>
+                  </div>
+                </li>
+
+                <li class="list-item">
+                  <div class="list-item-inner">
+                    <h2>Line header</h2>
+                    <div class="list-widget">
+                      <label>amount</label>
+                      <input type="text" value="123">
+                    </div>
+                  </div>
+                </li>
+
+                <li class="list-item">
+                  <div class="list-item-inner">
+                    <h2>Line header</h2>
+                    <div class="list-widget">
+                      <label>amount</label>
+                      <input type="text" value="123">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="chart">
+              <h2>Earnings chart</h2>
+
+              <!--Tabs
+              <ul>
+                <li><a class="tab-one" href="#"><span>Signups</span></a></li>
+                <li><a class="tab-two" href="#"><span>FTD</span></a></li>
+                <li><a class="tab-one" href="#"><span>Earned</span></a></li>
+              </ul>
+              -->
+              <img src="images/graph.png" alt="chart" title="chart">
+            </div>
+
+          </section>
+
+        </div>
+      </main>
+    
     </div>
-  
   </body>
 </html>
 

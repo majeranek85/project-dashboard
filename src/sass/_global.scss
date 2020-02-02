@@ -5,12 +5,17 @@ body {
   font-weight: 300;
   color: $color-dark;
   margin: 0;
+  background: $color-lightgray;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+section {
+  background: #fff;
+  box-shadow: 2px 2px 2px $color-gray;
+}
+
+.section-title {
+  border-bottom: 1px solid $color-lightgray;
+  padding: 5px 20px;
 }
 
 h1 {
