@@ -5,13 +5,21 @@
   justify-content: flex-end;
 
   div {
-    padding: 15px 15px 15px 0;
+    padding: 15px 0;
     border-left: 1px solid $color-lightgray;
+    
+    &:last-of-type {
+      padding-right: 15px;
+    }
   }
 
   i {
     padding: 15px;
     
+  }
+
+  a {
+    padding: 15px 0;
   }
 
   & .icon-notification {
