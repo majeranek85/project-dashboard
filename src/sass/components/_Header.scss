@@ -1,1 +1,43 @@
 /* header */
+.header--topbar {
+  width: calc(100% - 190px);
+  display: inline-flex;
+  justify-content: flex-end;
+
+  div {
+    padding: 15px 15px 15px 0;
+    border-left: 1px solid $color-lightgray;
+  }
+
+  i {
+    padding: 15px;
+    
+  }
+
+  & .icon-notification {
+    border-left: 1px solid $color-lightgray;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: $radius-circle;
+      background: $color-main;
+      top: 13px;
+      right: 13px;
+    }
+  }
+
+  & .icon-quit {
+    border-left: 1px solid $color-lightgray;
+  }
+}
+
+@media (max-width: 767px) {
+  .header--topbar {
+    display: block;
+    width: 100%;
+  }
+}

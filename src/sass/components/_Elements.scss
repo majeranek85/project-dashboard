@@ -178,6 +178,7 @@
 
 @media (max-width: 767px) {
   .element--calendar {
+    font-size: $base-size;
     display: flex;
     flex-direction: column;
 
@@ -193,6 +194,8 @@
 
   .calendar-input-wrapper {
     padding: 10px 0 10px 0;
+    display: block;
+    margin: 0 auto;
   }
 
   .element--table {
