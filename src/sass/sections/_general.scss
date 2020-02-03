@@ -2,10 +2,10 @@
   text-align: center;
   padding: 40px 0;
   border-bottom: 1px solid $color-lightgray;
+}
 
-  & .btn-refresh {
-    padding-left: 15px;
-  }
+.calendar-wrapper .btn-refresh {
+  padding-left: 15px;
 }
 
 #general .element--list {
@@ -34,7 +34,7 @@
 
   img {
     margin: 40px 0;
-    width: 100%
+    width: 100%;
   }
 }
 
@@ -60,4 +60,18 @@
 .add-link {
   text-align: center;
   margin: 40px 0;
+}
+
+@media (max-width: 767px) {
+  #general .list {
+    flex-direction: column;
+    
+    & .list-item {
+    margin-right: 0;
+    }
+
+    & .list-item-inner {
+      width: 100%;
+    }
+  }
 }

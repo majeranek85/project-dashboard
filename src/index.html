@@ -13,160 +13,165 @@
 
   <body>
 
-      <header class="header">
+    <aside class="menu-aside">
+      <div class="logo">
+        <h1>Just do it</h1>
+        <a id="mobile-menu" href="#"><i class="fas fa-bars"></i></a>
+      </div>
+      <!--Navigation-->
+      <nav class="navigation">
+        <ul class="menu-list">
+          <li class="list-item"><a href="#general"><i class="icon-general"></i>General</a></li>
+          <li class="list-item"><a href="#details"><i class="icon-details"></i>Details</a></li>
+          <li class="list-item"><a href="#links"><i class="icon-links"></i>Links</a></li>
+          <li class="list-item"><a href="#banners"><i class="icon-banners"></i>Banners</a></li>
+          <li class="list-item"><a href="#personaldata"><i class="icon-personaldata"></i>Personal data</a></li>
+          <li class="list-item"><a href="#payout"><i class="icon-payout"></i>Payout</a></li>
+          <li class="list-item"><a href="#postback"><i class="icon-postback"></i>Postback</a></li>
+        </ul>
+        <header class="header">
           <div class="header--topbar">
-   
+     
           </div>
-      </header>
+        </header>
+      </nav>
+    </aside>
 
-      <aside class="menu-aside active">
-        <div class="logo">
-          <h1>Just do it</h1>
-          <a href="#"><i class="fas fa-bars"></i></a>
+    <main class="main">
+      <!--pages-->
+      <div id="pages">
+        <section id="home">
+          <div class="home-page-wrapper main"></div>
+        </section>
+        <section id="links">
+          <div id="link-list" class="product-list main"></div>
+        </section>
+      </div>
+      <!-- home-->
+      <section id="general">
+        <div class="section-title">
+          <h1>General statistic</h1>
         </div>
-        <!--Navigation-->
-        <nav id="navigation" class="menu--sidebar">
-          <ul class="menu-list">
-            <li class="list-item"><a href="#general"><i class="icon-general"></i>General</a></li>
-            <li class="list-item"><a href="#details"><i class="icon-details"></i>Details</a></li>
-            <li class="list-item"><a href="#links"><i class="icon-links"></i>Links</a></li>
-            <li class="list-item"><a href="#banners"><i class="icon-banners"></i>Banners</a></li>
-            <li class="list-item"><a href="#personaldata"><i class="icon-personaldata"></i>Personal data</a></li>
-            <li class="list-item"><a href="#payout"><i class="icon-payout"></i>Payout</a></li>
-            <li class="list-item"><a href="#postback"><i class="icon-postback"></i>Postback</a></li>
-          </ul>
-        </nav>
-      </aside>
 
-      <main class="main">
-        <div class="page-wrapper">
-
-          <section id="general">
-            <div class="section-title">
-              <h1>General statistic</h1>
+        <div class="calendar-wrapper">
+          <div class="element--calendar">
+            <div class="calendar-input-wrapper">
+              <label>Calendar:</label>
+              <input class="input--calendar" type="date" value="2020-01-31">
+              <input class="input--calendar" type="date" value="2020-01-31">
+              <span><a href="#"><i class="icon-calendar"></i></a></span>
             </div>
+            <a class="btn-refresh"><i class="icon-refresh"></i></a>
+          </div>
+        </div>
 
-            <div class="calendar-wrapper">
-              <div class="element--calendar">
-                <div class="calendar-input-wrapper">
-                  <label>Calendar:</label>
-                  <input class="input--calendar" type="date" value="2020-01-31">
-                  <input class="input--calendar" type="date" value="2020-01-31">
-                  <span><a href="#"><i class="icon-calendar"></i></a></span>
+        <div class="element--list">
+          <ul class="list">
+            <li class="list-item">
+              <div class="list-item-inner">
+                <h2>Line header</h2>
+                <div class="list-widget">
+                  <label>amount</label>
+                  <input type="text" value="123">
                 </div>
-                <a class="btn-refresh"><i class="icon-refresh"></i></a>
               </div>
-            </div>
-
-            <div class="element--list">
-              <ul class="list">
-                <li class="list-item">
-                  <div class="list-item-inner">
-                    <h2>Line header</h2>
-                    <div class="list-widget">
-                      <label>amount</label>
-                      <input type="text" value="123">
-                    </div>
-                  </div>
-                </li>
+            </li>
 
 
-                <li class="list-item">
-                  <div class="list-item-inner">
-                    <h2>Line header</h2>
-                    <div class="list-widget">
-                      <label>amount</label>
-                      <input type="text" value="123">
-                    </div>
-                  </div>
-                </li>
+            <li class="list-item">
+              <div class="list-item-inner">
+                <h2>Line header</h2>
+                <div class="list-widget">
+                  <label>amount</label>
+                  <input type="text" value="123">
+                </div>
+              </div>
+            </li>
 
-                <li class="list-item">
-                  <div class="list-item-inner">
-                    <h2>Line header</h2>
-                    <div class="list-widget">
-                      <label>amount</label>
-                      <input type="text" value="123">
-                    </div>
-                  </div>
-                </li>
+            <li class="list-item">
+              <div class="list-item-inner">
+                <h2>Line header</h2>
+                <div class="list-widget">
+                  <label>amount</label>
+                  <input type="text" value="123">
+                </div>
+              </div>
+            </li>
 
-                <li class="list-item">
-                  <div class="list-item-inner">
-                    <h2>Line header</h2>
-                    <div class="list-widget">
-                      <label>amount</label>
-                      <input type="text" value="123">
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="chart">
-              <h2>Earnings chart</h2>
-
-              <!--Tabs
-              <ul>
-                <li><a class="tab-one" href="#"><span>Signups</span></a></li>
-                <li><a class="tab-two" href="#"><span>FTD</span></a></li>
-                <li><a class="tab-one" href="#"><span>Earned</span></a></li>
-              </ul>
-              -->
-              <img src="images/graph.png" alt="chart" title="chart">
-            </div>
-
-          </section>
-
-          <section id="links">
-            <div class="section-title">
-              <h1>Links</h1>
-            </div>
-
-            <div class="add-link">
-              <a class="btn-primary" href="#">+ add new</a>
-            </div>
-
-
-            <div class="element--table">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td>
-                      <h2>Home page</h2>
-                    </td>
-                    <td>
-                      <a href="#">http://www.homepage.com</a>
-                    </td>
-                    <td>
-                      <a href="#"><i class="icon-links"></i></a>
-                      <a href="#"><i class=""></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <h2>Home page</h2>
-                    </td>
-                    <td>
-                      <a href="#">http://www.homepage.com</a>
-                    </td>
-                    <td>
-                      <a href="#"><i class="icon-links"></i></a>
-                      <a href="#"><i class=""></i></a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div class="add-link">
-              <a class="btn-primary" href="#">+ add new</a>
-            </div>
-
-          </section>
-
+            <li class="list-item">
+              <div class="list-item-inner">
+                <h2>Line header</h2>
+                <div class="list-widget">
+                  <label>amount</label>
+                  <input type="text" value="123">
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </main>
-    
-    </div>
+
+        <div class="chart">
+          <h2>Earnings chart</h2>
+
+          <!--Tabs
+          <ul>
+            <li><a class="tab-one" href="#"><span>Signups</span></a></li>
+            <li><a class="tab-two" href="#"><span>FTD</span></a></li>
+            <li><a class="tab-one" href="#"><span>Earned</span></a></li>
+          </ul>
+          -->
+          <img src="images/graph.png" alt="chart" title="chart">
+        </div>
+
+      </section>
+
+      <section id="links">
+        <div class="section-title">
+          <h1>Links</h1>
+        </div>
+
+        <div class="add-link">
+          <a class="btn-primary" href="#">+ add new</a>
+        </div>
+
+
+        <div class="element--table">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>
+                  <h2>Home page</h2>
+                </td>
+                <td>
+                  <a href="#">http://www.homepage.com</a>
+                </td>
+                <td>
+                  <a href="#"><i class="icon-links"></i></a>
+                  <a href="#"><i class=""></i></a></td>
+              </tr>
+              <tr>
+                <td>
+                  <h2>Home page</h2>
+                </td>
+                  <td>
+                  <a href="#">http://www.homepage.com</a>
+                </td>
+                <td>
+                  <a href="#"><i class="icon-links"></i></a>
+                  <a href="#"><i class=""></i></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="add-link">
+          <a class="btn-primary" href="#">+ add new</a>
+        </div>
+
+      </section>
+          <!--END home-->
+    </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
 

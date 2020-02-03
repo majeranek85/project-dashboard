@@ -17,22 +17,24 @@
       font-size: 20px;
       padding: 15px;
     }
-  }
 
-  a:hover {
-    color: $color-main;
+    &:hover {
+      color: $color-main;
+    }
   }
 }
 
-.menu--sidebar { //nav
+.navigation { //nav
   font-weight: 300;
+  background: #191919;
 }
 
 .menu-list { //ul
-  @extend .no-spacing;
+  margin: 0;
+  padding: 0;
 }
 
-.menu--sidebar .list-item {
+.navigation .list-item {
   padding: 10px 20px;
 
   a {
@@ -46,12 +48,18 @@
     }
   }
 
-  &:hover, &:active {
+  &:hover {
     border-left: 5px solid $color-main;
     background: $color-dark;
 
     a {
       color: #fff;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    width: 100%;
   }
 }

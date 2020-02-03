@@ -6,6 +6,7 @@
   width: 100%;
   background: #fff;
   border-bottom: 1px solid $color-gray;
+  z-index: 9999;
 }
 
 .menu-aside {
@@ -15,8 +16,33 @@
   left: 0;
   top: 0;
   height: 100vh;
+  z-index: 9999;
 }
 
 .main {
   margin: 50px 0 0 190px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    position: unset;
+  }
+
+  .menu-aside {
+    width: 100%;
+    height: auto;
+  }
+
+  .navigation {
+    display: none;
+    background: #191919;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .main {
+    margin: 50px  auto 0 auto;
+  }
 }

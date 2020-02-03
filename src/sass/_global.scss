@@ -1,4 +1,13 @@
 /* Global */
+#pages {
+  > * {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+}
 
 body {
   font-family: $font-main;
@@ -54,4 +63,12 @@ input {
 
 ul {
   list-style-type: none;
+}
+
+@media (max-width: 767px) {
+  section {
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: unset;
+  }
 }
