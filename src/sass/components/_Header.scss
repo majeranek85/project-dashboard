@@ -21,26 +21,26 @@
   a {
     padding: 15px 0;
   }
+}
 
-  & .icon-notification {
-    border-left: 1px solid $color-lightgray;
-    position: relative;
+.header--topbar .icon-notification {
+  border-left: 1px solid $color-lightgray;
+  position: relative;
 
-    &:after {
-      position: absolute;
-      content: '';
-      width: 8px;
-      height: 8px;
-      border-radius: $radius-circle;
-      background: $color-main;
-      top: 13px;
-      right: 13px;
-    }
+  &:after {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: $radius-circle;
+    background: $color-main;
+    top: 13px;
+    right: 13px;
   }
+}
 
-  & .icon-quit {
-    border-left: 1px solid $color-lightgray;
-  }
+.header--topbar .icon-quit {
+  border-left: 1px solid $color-lightgray;
 }
 
 @media (max-width: 767px) {

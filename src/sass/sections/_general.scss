@@ -64,14 +64,14 @@
 
 @media (max-width: 767px) {
   #general .list {
-    flex-direction: column;
-    
-    & .list-item {
-    margin-right: 0;
-    }
+    flex-direction: column;  
+  }
 
-    & .list-item-inner {
-      width: 100%;
-    }
+  #general .list-item {
+    margin-right: 0;
+  }
+
+  #general .list-item-inner {
+    width: 100%;
   }
 }
