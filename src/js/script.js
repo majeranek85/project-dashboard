@@ -6,10 +6,10 @@
 /* Mobile navigation */
 const mobileMenu = document.querySelector('.navigation');
 
-//console.log(mobileMenu);
+console.log(mobileMenu);
 
-const hamburger = document.getElementById('mobile-menu');
-//console.log(hamburger);
+const hamburger = document.querySelector('.logo__mobile-menu-link');
+console.log(hamburger);
 
 hamburger.addEventListener('click', function(event){
   event.preventDefault();

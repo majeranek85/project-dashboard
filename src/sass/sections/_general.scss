@@ -1,33 +1,55 @@
-.calendar-wrapper {
+.general__calendar-wrapper {
   text-align: center;
   padding: 40px 0;
   border-bottom: 1px solid $color-lightgray;
-}
-
-.calendar-wrapper .btn-refresh {
-  padding-left: 15px;
-}
-
-#general .element--list {
   margin-top: 20px;
 }
 
-#general .list { //ul
-  flex-wrap: wrap;
-  display: flex;
-  margin: 0 auto;
-  padding: 0;
-  justify-content: space-between;
+.widgets {
+  margin-top: 40px;
+}
 
-  li {
-    min-width: 50%;
-    min-width: 30%;
-    flex: 1;
-    margin-right: 4%;
-    margin-top: 20px;
+.widgets__items-list {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 70%;
+  padding-left: 0;
+}
+
+.widgets__list-item {
+  //display: flex;
+  min-width: 30%;
+  flex: 1;
+  margin-right: 4%;
+  margin-top: 20px;
+}
+
+.widgets__list-item-inner {
+  display: inline-flex;
+  border-bottom: 1px solid $color-gray;
+
+  h2 {
+    flex: 0 0 80%;
+    margin: 0;
+    padding-bottom: 5px;
   }
 }
 
+.widgets__input-wrapper {
+  flex: 0 0 20%;
+
+  label {
+    display: none;
+  }
+}
+
+.widgets__input {
+  border: none;
+  width: 100%;
+  text-align: end;
+}
+ 
 .chart {
   max-width: 70%;
   margin: 60px auto 0 auto;
@@ -38,40 +60,13 @@
   }
 }
 
-/*.chart {
-  text-align: center;
-  max-width: 70%;
-  margin: 60px auto 0 auto;
-
-  h2 {
-    text-align: left;
-  }
-
-  ul {
-    @extend .no-spacing;
-    display: inline-flex;
-
-    li{
-      margin-right: 10%;
-    }
-  }
-} */
-
-.add-link {
-  text-align: center;
-  margin: 40px 0;
-}
-
 @media (max-width: 767px) {
-  #general .list {
-    flex-direction: column;  
-  }
-
-  #general .list-item {
-    margin-right: 0;
-  }
-
-  #general .list-item-inner {
+  .widgets__items-list {
+    flex-direction: column; 
     width: 100%;
+  }
+
+  .widgets__list-item {
+    margin-right: 0;
   }
 }

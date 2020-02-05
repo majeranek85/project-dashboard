@@ -1,29 +1,30 @@
 /* header */
-.header--topbar {
+.topbar {
   width: calc(100% - 190px);
   display: inline-flex;
   justify-content: flex-end;
 
-  div {
-    padding: 15px 0;
-    border-left: 1px solid $color-lightgray;
-    
-    &:last-of-type {
-      padding-right: 15px;
-    }
-  }
-
   i {
-    padding: 15px;
-    
-  }
-
-  a {
-    padding: 15px 0;
+    padding: 15px;  
   }
 }
 
-.header--topbar .icon-notification {
+.topbar__price-widget, 
+.topbar__profile-widget {
+  padding: 15px 0;
+  border-left: 1px solid $color-lightgray;
+}
+
+.topbar__profile-widget {
+  padding-right: 15px;
+}
+
+.topbar__link {
+  padding: 15px 0;
+}
+
+
+.topbar .icon-notification {
   border-left: 1px solid $color-lightgray;
   position: relative;
 
@@ -39,12 +40,12 @@
   }
 }
 
-.header--topbar .icon-quit {
+.topbar .icon-quit {
   border-left: 1px solid $color-lightgray;
 }
 
 @media (max-width: 767px) {
-  .header--topbar {
+  .topbar {
     display: block;
     width: 100%;
   }

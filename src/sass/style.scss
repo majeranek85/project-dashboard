@@ -5,7 +5,8 @@
 @import 'global';
 /* Components */
 @import './components/Elements';
-@import './components/Header';
-@import './components/Menu-aside';
+@import './components/Topbar';
+@import './components/Sidebar';
 /* Sections */
 @import 'sections/general';
+@import 'sections/links';

@@ -1,14 +1,4 @@
 /* Global */
-#pages {
-  > * {
-    display: none;
-  }
-
-  > .active {
-    display: block;
-  }
-}
-
 body {
   font-family: $font-main;
   font-weight: 300;

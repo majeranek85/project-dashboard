@@ -1,4 +1,4 @@
-.header {
+.topbar {
   position: fixed;
   top: 0;
   left: 190px;
@@ -9,7 +9,7 @@
   z-index: 9999;
 }
 
-.menu-aside {
+.sidebar {
   position: fixed;
   width: 190px;
   background: #191919;
@@ -19,31 +19,30 @@
   z-index: 9999;
 }
 
-.main {
+.page {
   margin: 50px 0 0 190px;
 }
 
 @media (max-width: 767px) {
-  .header {
+  .topbar {
     position: unset;
     height: auto;
   }
 
-  .menu-aside {
+  .sidebar {
     width: 100%;
     height: auto;
   }
 
   .navigation {
     display: none;
-    background: #191919;
-
-    &.active {
-      display: block;
-    }
   }
 
-  .main {
+  .navigation.active {
+    display: block;
+  }
+
+  .page {
     margin: 50px  auto 0 auto;
   }
 }

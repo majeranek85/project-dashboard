@@ -29,65 +29,68 @@
       <a class="btn-primary" href="#">+ add new</a>
       <a class="btn-secondary" href="#">+ add new</a>
       <a class="btn-disabled" href="#"><div><span><i class="icon-links"></i></span><span>Copy link</span></div></a>
-      <a class="btn-refresh"><i class="icon-refresh"></i></a>
+      <a class="btn-refresh" href="#"><i class="icon-refresh"></i></a>
       <br><br>
       <a class="tab" href="#"><span>Signups</span></a>
       <br><br>
   
   
-      <div class="element--calendar">
-        <div class="calendar-input-wrapper">
-          <label>Calendar:</label>
-          <input class="input--calendar" type="date" value="2020-01-31">
-          <input class="input--calendar" type="date" value="2020-01-31">
-          <span><a href="#"><i class="icon-calendar"></i></a></span>
+      <div class="calendar">
+        <div class="calendar__input-wrapper">
+          <label>date start</label>
+          <input class="calendar__input" type="date" value="2020-01-31">
+          <label>date end</label>
+          <input class="calendar__input" type="date" value="2020-01-31">
+          <span class="calendar__icon-wrapper"><i class="calendar__icon icon-calendar"></i></span>
         </div>
-        <a class="btn-refresh"><i class="icon-refresh"></i></a>
+        <a class="calendar__btn btn-refresh" href="#"><i class="icon-refresh"></i></a>
       </div>
       <br><br>
   
-    <div class="element--list">
-      <ul class="list">
-        <li class="list-item">
-          <div class="list-item-inner">
-            <h2>Line header</h2>
-            <div class="list-widget">
-              <label>amount</label>
-              <input type="text" value="123">
+      <form class="widgets">
+        <ul class="widgets__items-list">
+          <li class="widgets__list-item">
+            <div class="widgets__list-item-inner">
+              <h2>Line header</h2>
+              <div class="widgets__input-wrapper">
+                <label>amount</label>
+                <input class="widgets__input" type="text" value="123">
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
-    </div>
+          </li>
+        </ul>
+      </form>
 
-    <br><br>
+      <br><br>
 
-    <div class="element--table">
-      <table class="table">
-        <tr>
-          <td>
-            <h2>Home page</h2>
-          </td>
-          <td>
-            <a href="#">http://www.homepage.com</a>
-          </td>
-          <td>
-            <a href="#"><i class="icon-links"></i></a>
-            <a href="#"><i class=""></i></a></td>
-        </tr>
-        <tr>
-          <td>
-            <h2>Home page</h2>
-          </td>
-          <td>
-            <a href="#">http://www.homepage.com</a>
-          </td>
-          <td>
-            <a href="#"><i class="icon-links"></i></a>
-            <a href="#"><i class=""></i></a></td>
-        </tr>
+      <table class="links__table">
+        <tbody>
+          <tr class="links__table-row">
+            <td class="links__table-element">
+              <h2>Home page</h2>
+            </td>
+            <td class="links__table-element">
+              <a href="#">http://www.homepage.com</a>
+            </td>
+            <td class="links__table-element">
+              <a href="#"><i class="icon-links"></i></a>
+              <a href="#"><i class="icon-trash"></i></a>
+            </td>
+          </tr>
+          <tr class="links__table-row">
+            <td class="links__table-element">
+              <h2>Home page</h2>
+            </td>
+            <td class="links__table-element">
+              <a href="#">http://www.homepage.com</a>
+            </td>
+            <td class="links__table-element">
+              <a href="#"><i class="icon-links"></i></a>
+              <a href="#"><i class="icon-trash"></i></a>
+            </td>
+          </tr>
+        </tbody>
       </table>
-    </div>
       <br><br>
   
     </div>
