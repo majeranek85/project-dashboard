@@ -1,4 +1,4 @@
-/* Buttons */
+/* Buttons */  //further rename
 .btn-primary {
   @include btn ($color-main, $color-main-hov, $color-light, $color-light, 126px);
 }
@@ -101,13 +101,14 @@
 
 /* Tabs */
 .tab-one{
-  @include tabs(#80bfca);
+  @include tabs(#80bfca); //further rename
 }
 
 .tab-two {
-  @include tabs($color-main);
+  @include tabs($color-main); //further rename
 }
 
+/* Media */
 @media (max-width: 767px) {
 
   .calendar {

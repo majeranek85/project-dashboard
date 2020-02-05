@@ -24,7 +24,7 @@
 }
 
 
-.topbar .icon-notification {
+.topbar .icon-notification { //further rename
   border-left: 1px solid $color-lightgray;
   position: relative;
 
@@ -40,10 +40,11 @@
   }
 }
 
-.topbar .icon-quit {
+.topbar .icon-quit {  //further rename
   border-left: 1px solid $color-lightgray;
 }
 
+/* Media */
 @media (max-width: 767px) {
   .topbar {
     display: block;
