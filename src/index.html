@@ -12,81 +12,84 @@
   </head>
 
   <body>
-    <aside class="sidebar"> <!--Sidebar-->
-      <div class="logo">
-        <h1 class="logo__title">Just do it</h1>
-        <a  class="logo__mobile-menu-link" href="#">
-          <i class="logo__icon fas fa-bars"></i>
-        </a>
-      </div>
-      <nav class="navigation"> <!--Navigation-->
-        <ul class="navigation__items-list">
-          <li class="navigation__list-item">
-            <a class="navigation__link" href="#details">
-              <i class="navigation__icon icon-details"></i>
-              Details
-            </a>
-          </li>
-          <li class="navigation__list-item">
-            <a class="navigation__link" href="#general">
-              <i class="navigation__icon icon-general"></i>
-              General
-            </a>
-          </li>
-          <li class="navigation__list-item">
-            <a class="navigation__link" href="#links">
-              <i class="navigation__icon icon-links"></i>
-              Links
-            </a>
-          </li>
-          <li class="navigation__list-item">
-            <a class="navigation__link" href="#banners">
-              <i class="navigation__icon icon-banners"></i>
-              Banners
-            </a>
-          </li>
-          <li class="navigation__list-item">
-            <a class="navigation__link" href="#personaldata">
-              <i class="navigation__icon icon-personaldata"></i>
-              Personal data
-            </a>
-          </li>
-          <li class="navigation__list-item">
-            <a class="navigation__link" href="#payout">
-              <i class="navigation__icon icon-payout"></i>
-              Payout
-            </a>
-          </li>
-          <li class="navigation__list-item">
-            <a class="navigation__link" href="#postback">
-              <i class="navigation__icon icon-postback"></i>
-              Postback
-            </a>
-          </li>
-        </ul>
-
-        <header class="topbar"> <!--Topbar-->
-            <div class="topbar__price-widget">
-              <i class="icon-wallet"></i>$ 1,500.00<i class="icon-arrow-down"></i>
-            </div>
+    <div class="navigation-wrapper">
+      <header class="topbar"> <!--Topbar-->
+        <div class="logo">
+          <h1 class="logo__title">Just do it</h1>
+          <a  class="logo__mobile-menu-link" href="#">
+            <i class="logo__icon fas fa-bars"></i>
+          </a>
+        </div>
+        <nav class="topbar__navigation">
+          <div class="topbar__price-widget">
+            <i class="icon-wallet"></i>$ 1,500.00<i class="icon-arrow-down"></i>
+          </div>
+          <a class="topbar__link">
+            <i class="topbar__icon icon-notification"></i>
+          </a>
+          <div class="topbar__profile-widget">
             <a class="topbar__link">
-              <i class="topbar__icon icon-notification"></i>
+              <i class="icon-profile"></i>
+              <span>Leonardo Dicaprio</span>
             </a>
-            <div class="topbar__profile-widget">
-              <a class="topbar__link">
-                <i class="icon-profile"></i>
-                <span>Leonardo Dicaprio</span>
+          </div>
+          <a class="topbar__link">
+            <i class="icon-quit"></i>
+          </a>
+        </nav>
+      </header>
+      <aside class="sidebar"> <!--Sidebar-->
+        <nav class="navigation"> <!--Navigation-->
+          <ul class="navigation__items-list">
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#details">
+                <i class="navigation__icon icon-details"></i>
+                Details
               </a>
-            </div>
-            <a class="topbar__link">
-              <i class="icon-quit"></i>
-            </a>
-        </header>
-      </nav>
-    </aside>
-  
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#general">
+                <i class="navigation__icon icon-general"></i>
+                General
+              </a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#links">
+                <i class="navigation__icon icon-links"></i>
+                Links
+              </a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#banners">
+                <i class="navigation__icon icon-banners"></i>
+                Banners
+              </a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#personaldata">
+                <i class="navigation__icon icon-personaldata"></i>
+                Personal data
+              </a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#payout">
+                <i class="navigation__icon icon-payout"></i>
+                Payout
+              </a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#postback">
+                <i class="navigation__icon icon-postback"></i>
+                Postback
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+    
     <main class="page">
-      
+
       <section class="general"> <!--General section-->
         <div class="section-title">
           <h1>General statistic</h1>

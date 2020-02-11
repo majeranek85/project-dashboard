@@ -1,12 +1,43 @@
 /* header */
+.logo {
+  display: flex;
+  background: #191919;
+  width: 190px;
+  margin-right: auto;
+}
+
+.logo__title {
+  flex: 4;
+  padding: 5px 15px;
+  color: $color-light;
+}
+
+.logo__mobile-menu-link {
+  color: $color-light;
+
+  &:hover {
+    color: $color-main;
+  }
+}
+
+.logo__icon {
+  flex: 1;
+  font-size: 20px;
+  padding: 15px;
+}
+
 .topbar {
-  width: calc(100% - 190px);
+  width: 100%;
   display: inline-flex;
   justify-content: flex-end;
 
   i {
     padding: 15px;  
   }
+}
+
+.topbar__navigation {
+  display: inline-flex;
 }
 
 .topbar__price-widget, 
@@ -22,7 +53,6 @@
 .topbar__link {
   padding: 15px 0;
 }
-
 
 .topbar .icon-notification { //further rename
   border-left: 1px solid $color-lightgray;
@@ -46,8 +76,26 @@
 
 /* Media */
 @media (max-width: 767px) {
+  .logo {
+    width: 100%;
+  }
+
   .topbar {
     display: block;
     width: 100%;
+  }
+
+  .topbar__navigation {
+    position: absolute;
+    width: 100%;
+    top: 322px;
+    left: 0;
+    background: #fff;
+    border-bottom: 1px solid #bababa;
+    display: none;
+
+    &.active {
+      display: block;
+    }
   }
 }

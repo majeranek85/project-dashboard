@@ -1,29 +1,3 @@
-.logo {
-  display: flex;
-  background: #191919;
-  width: 190px;
-}
-
-.logo__title {
-  flex: 4;
-  padding: 5px 15px;
-  color: $color-light;
-}
-
-.logo__mobile-menu-link {
-  color: $color-light;
-
-  &:hover {
-    color: $color-main;
-  }
-}
-
-.logo__icon {
-  flex: 1;
-  font-size: 20px;
-  padding: 15px;
-}
-
 .navigation {
   font-weight: 300;
   background: #191919;
@@ -59,8 +33,3 @@
 }
 
 /* Media */
-@media (max-width: 767px) {
-  .logo {
-    width: 100%;
-  }
-}

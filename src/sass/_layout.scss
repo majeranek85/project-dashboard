@@ -1,7 +1,11 @@
+.naviation-wrapper {
+  position: relative;
+}
+
 .topbar {
   position: fixed;
   top: 0;
-  left: 190px;
+  left: 0;
   height: 50px;
   width: 100%;
   background: #fff;
@@ -14,7 +18,7 @@
   width: 190px;
   background: #191919;
   left: 0;
-  top: 0;
+  top: 50px;
   height: 100vh;
   z-index: 9999;
 }
@@ -24,8 +28,11 @@
 }
 
 @media (max-width: 767px) {
+  .naviation-wrapper {
+    height: 500px;
+  }
+
   .topbar {
-    position: unset;
     height: auto;
   }
 

@@ -5,7 +5,7 @@
 
 /* Mobile navigation */
 const mobileMenu = document.querySelector('.navigation');
-
+const mobileTopbar = document.querySelector('.topbar__navigation');
 console.log(mobileMenu);
 
 const hamburger = document.querySelector('.logo__mobile-menu-link');
@@ -14,6 +14,7 @@ console.log(hamburger);
 hamburger.addEventListener('click', function(event){
   event.preventDefault();
   mobileMenu.classList.toggle('active');
+  mobileTopbar.classList.toggle('active');
 });
 
 /* Page activation */
