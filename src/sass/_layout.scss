@@ -1,3 +1,13 @@
+#pages {
+  > * {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+}
+
 .naviation-wrapper {
   position: relative;
 }

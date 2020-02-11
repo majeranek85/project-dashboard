@@ -42,15 +42,15 @@
         <nav class="navigation"> <!--Navigation-->
           <ul class="navigation__items-list">
             <li class="navigation__list-item">
-              <a class="navigation__link" href="#details">
-                <i class="navigation__icon icon-details"></i>
-                Details
-              </a>
-            </li>
-            <li class="navigation__list-item">
               <a class="navigation__link" href="#general">
                 <i class="navigation__icon icon-general"></i>
                 General
+              </a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#details">
+                <i class="navigation__icon icon-details"></i>
+                Details
               </a>
             </li>
             <li class="navigation__list-item">
@@ -87,10 +87,10 @@
         </nav>
       </aside>
     </div>
-    
-    <main class="page">
 
-      <section class="general"> <!--General section-->
+    <main id="pages" class="page">
+
+      <section id="general" class="general"> <!--General section-->
         <div class="section-title">
           <h1>General statistic</h1>
         </div>
@@ -152,7 +152,7 @@
         </div>
       </section>
 
-      <section class="links"> <!--Links section-->
+      <section id="links" class="links active"> <!--Links section-->
         <div class="section-title">
           <h1>Links</h1>
         </div>
@@ -193,6 +193,8 @@
           <a class="btn-primary" href="#">+ add new</a>
         </div>
       </section>
+
+
 
     </main>
 
