@@ -1,0 +1,24 @@
+.details__table-wrapper {
+  margin: 40px auto;
+  width: calc(100% - 190px);
+  padding: 5px;
+  font-size: $base-size - 2;
+  text-align: center;
+} 
+
+.details__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.details__table-row {
+  border-bottom: 1px solid $color-gray;
+
+  &:hover {
+    background: $color-lightgray;
+  }
+}
+
+.details__table-element {
+  padding: 5px;
+}
