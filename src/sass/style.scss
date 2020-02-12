@@ -4,10 +4,14 @@
 @import 'layout';
 @import 'global';
 /* Components */
+
+@import './components/Calendar';
 @import './components/Elements';
+@import './components/Tables';
 @import './components/Topbar';
 @import './components/Sidebar';
 /* Sections */
 @import 'sections/general';
 @import 'sections/links';
 @import 'sections/details';
+@import 'sections/banners';

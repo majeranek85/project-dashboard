@@ -39,64 +39,9 @@
   }
 }
 
-/* Calendar */
-.calendar {
-  display: inline-flex;
-}
-
-.calendar__input-wrapper {
-  border: 1px solid $color-gray;
-  border-radius: $radius-sm;
-  position: relative;
-  height: 20px;
-  width: 100%;
-  display: flex;
-  padding: 10px;
-
-  label {
-    display: none;
-  }
-
-  &:hover {
-    border-color: $color-dark;
-  
-    i {
-      color: $color-dark;
-    }
-  }
-}
-
-.calendar__input {
-  padding-left: 10px;
-
-  &:first-of-type {
-    flex: 2;
-    border-width: 0 1px 0 0;
-    border-color: $color-gray;
-  }
-
-  &:last-of-type {
-    flex: 2;
-    border: 0;
-  }
-}
-
-.calendar__icon-wrapper {
-  flex: 1;
-  position: relative;
-  width: 40px;
-}
-
-.calendar__icon {
-  position: absolute;
-  top: 50%;
-  right: 5px;
-  transform: translateY(-50%);
-  color: $color-gray;
-}
-
-.calendar__btn {
-  margin-left: 15px;
+.btn-wrapper-center {
+  text-align: center;
+  margin: 40px 0;
 }
 
 /* Tabs */
@@ -106,28 +51,4 @@
 
 .tab-two {
   @include tabs($color-main); //further rename
-}
-
-/* Media */
-@media (max-width: 767px) {
-  .calendar {
-    font-size: $base-size;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .calendar__input-wrapper {
-    padding: 10px 0 10px 0;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .calendar__btn {
-    margin: 10px auto  auto auto;
-    padding: 0;
-  }
-
-  .calendar__icon-wrapper {
-    display: none;
-  }
 }

@@ -156,32 +156,32 @@
         <div class="section-title">
           <h1>Links</h1>
         </div>
-        <div class="links__button-wrapper">
+        <div class="btn-wrapper-center">
           <a class="btn-primary" href="#">+ add new</a>
         </div>
         <div class="links__table-wrapper">
-          <table class="links__table">
+          <table class="table">
             <tbody>
-              <tr class="links__table-row">
-                <td class="links__table-element">
+              <tr class="table__row table__row--links">
+                <td class="table__element">
                   <h2>Home page</h2>
                 </td>
-                <td class="links__table-element">
+                <td class="table__element">
                   <a href="#">http://www.homepage.com</a>
                 </td>
-                <td class="links__table-element">
+                <td class="table__element">
                   <a href="#"><i class="icon-links"></i></a>
                   <a href="#"><i class="icon-trash"></i></a>
                 </td>
               </tr>
-              <tr class="links__table-row">
-                <td class="links__table-element">
+              <tr class="table__row">
+                <td class="table__element">
                   <h2>Home page</h2>
                 </td>
-                <td class="links__table-element">
+                <td class="table__element">
                   <a href="#">http://www.homepage.com</a>
                 </td>
-                <td class="links__table-element">
+                <td class="table__element">
                   <a href="#"><i class="icon-links"></i></a>
                   <a href="#"><i class="icon-trash"></i></a>
                 </td>
@@ -189,7 +189,7 @@
             </tbody>
           </table>
         </div>
-        <div class="links__button-wrapper">
+        <div class="btn-wrapper-center">
           <a class="btn-primary" href="#">+ add new</a>
         </div>
       </section>
@@ -198,7 +198,7 @@
         <div class="section-title">
           <h1>Detail Statistic</h1>
         </div>
-        <div class="general__calendar-wrapper">
+        <div class="details__calendar-wrapper">
           <form class="calendar">
             <div class="calendar__input-wrapper">
               <label>date start</label>
@@ -211,133 +211,173 @@
           </form>
         </div>
         <div class="details__table-wrapper">
-          <table class="details__table"> 
-            <thead class="details__table-head">
-              <tr class="details__table-row">
-                <th class="details__table-element">tracker name</th>
-                <th class="details__table-element">initiated date</th>
-                <th class="details__table-element">visits</th>
-                <th class="details__table-element">unique</th>
-                <th class="details__table-element">signups</th>
-                <th class="details__table-element">FTD</th>
-                <th class="details__table-element">depositors</th>
-                <th class="details__table-element">deposits($)</th>
-                <th class="details__table-element">payout($)</th>
-                <th class="details__table-element">turnover</th>
-                <th class="details__table-element">deal</th>
+          <table class="table"> 
+            <thead class="table__head">
+              <tr class="table__row">
+                <th class="table__element">tracker name</th>
+                <th class="table__element">initiated date</th>
+                <th class="table__element">visits</th>
+                <th class="table__element">unique</th>
+                <th class="table__element">signups</th>
+                <th class="table__element">FTD</th>
+                <th class="table__element">depositors</th>
+                <th class="table__element">deposits($)</th>
+                <th class="table__element">payout($)</th>
+                <th class="table__element">turnover</th>
+                <th class="table__element">deal</th>
               </tr>
             </thead>
-            <tbody class="details__table-body">
-              <tr class="details__table-row">
-                <td class="details__table-element">aff/sam_test</td>
-                <td class="details__table-element">17/08/02 (12:58)</td>
-                <td class="details__table-element">232</td>
-                <td class="details__table-element">114</td>
-                <td class="details__table-element">12</td>
-                <td class="details__table-element">6</td>
-                <td class="details__table-element">3</td>
-                <td class="details__table-element">34,425.00</td>
-                <td class="details__table-element">234.00</td>
-                <td class="details__table-element">421,342.00</td>
-                <td class="details__table-element">cpl(200)</td>
+            <tbody class="table__body">
+              <tr class="table__row">
+                <td class="table__element">aff/sam_test</td>
+                <td class="table__element">17/08/02 (12:58)</td>
+                <td class="table__element">232</td>
+                <td class="table__element">114</td>
+                <td class="table__element">12</td>
+                <td class="table__element">6</td>
+                <td class="table__element">3</td>
+                <td class="table__element">34,425.00</td>
+                <td class="table__element">234.00</td>
+                <td class="table__element">421,342.00</td>
+                <td class="table__element">cpl(200)</td>
               </tr>
-              <tr class="details__table-row">
-                <td class="details__table-element">aff/sam_test</td>
-                <td class="details__table-element">15/08/02 (12:58)</td>
-                <td class="details__table-element">232</td>
-                <td class="details__table-element">114</td>
-                <td class="details__table-element">12</td>
-                <td class="details__table-element">6</td>
-                <td class="details__table-element">3</td>
-                <td class="details__table-element">29,436.00</td>
-                <td class="details__table-element">941.00</td>
-                <td class="details__table-element">784,435.00</td>
-                <td class="details__table-element">cpl(200)</td>
+              <tr class="table__row">
+                <td class="table__element">aff/sam_test</td>
+                <td class="table__element">15/08/02 (12:58)</td>
+                <td class="table__element">232</td>
+                <td class="table__element">114</td>
+                <td class="table__element">12</td>
+                <td class="table__element">6</td>
+                <td class="table__element">3</td>
+                <td class="table__element">29,436.00</td>
+                <td class="table__element">941.00</td>
+                <td class="table__element">784,435.00</td>
+                <td class="table__element">cpl(200)</td>
               </tr>
-              <tr class="details__table-row">
-                <td class="details__table-element">aff/sam_test</td>
-                <td class="details__table-element">17/08/02 (12:58)</td>
-                <td class="details__table-element">232</td>
-                <td class="details__table-element">114</td>
-                <td class="details__table-element">12</td>
-                <td class="details__table-element">6</td>
-                <td class="details__table-element">3</td>
-                <td class="details__table-element">34,425.00</td>
-                <td class="details__table-element">234.00</td>
-                <td class="details__table-element">421,342.00</td>
-                <td class="details__table-element">cpl(200)</td>
+              <tr class="table__row">
+                <td class="table__element">aff/sam_test</td>
+                <td class="table__element">17/08/02 (12:58)</td>
+                <td class="table__element">232</td>
+                <td class="table__element">114</td>
+                <td class="table__element">12</td>
+                <td class="table__element">6</td>
+                <td class="table__element">3</td>
+                <td class="table__element">34,425.00</td>
+                <td class="table__element">234.00</td>
+                <td class="table__element">421,342.00</td>
+                <td class="table__element">cpl(200)</td>
               </tr>
-              <tr class="details__table-row">
-                <td class="details__table-element">aff/sam_test</td>
-                <td class="details__table-element">15/08/02 (12:58)</td>
-                <td class="details__table-element">232</td>
-                <td class="details__table-element">114</td>
-                <td class="details__table-element">12</td>
-                <td class="details__table-element">6</td>
-                <td class="details__table-element">3</td>
-                <td class="details__table-element">29,436.00</td>
-                <td class="details__table-element">941.00</td>
-                <td class="details__table-element">784,435.00</td>
-                <td class="details__table-element">cpl(200)</td>
+              <tr class="table__row">
+                <td class="table__element">aff/sam_test</td>
+                <td class="table__element">15/08/02 (12:58)</td>
+                <td class="table__element">232</td>
+                <td class="table__element">114</td>
+                <td class="table__element">12</td>
+                <td class="table__element">6</td>
+                <td class="table__element">3</td>
+                <td class="table__element">29,436.00</td>
+                <td class="table__element">941.00</td>
+                <td class="table__element">784,435.00</td>
+                <td class="table__element">cpl(200)</td>
               </tr>
-              <tr class="details__table-row">
-                <td class="details__table-element">aff/sam_test</td>
-                <td class="details__table-element">17/08/02 (12:58)</td>
-                <td class="details__table-element">232</td>
-                <td class="details__table-element">114</td>
-                <td class="details__table-element">12</td>
-                <td class="details__table-element">6</td>
-                <td class="details__table-element">3</td>
-                <td class="details__table-element">34,425.00</td>
-                <td class="details__table-element">234.00</td>
-                <td class="details__table-element">421,342.00</td>
-                <td class="details__table-element">cpl(200)</td>
+              <tr class="table__row">
+                <td class="table__element">aff/sam_test</td>
+                <td class="table__element">17/08/02 (12:58)</td>
+                <td class="table__element">232</td>
+                <td class="table__element">114</td>
+                <td class="table__element">12</td>
+                <td class="table__element">6</td>
+                <td class="table__element">3</td>
+                <td class="table__element">34,425.00</td>
+                <td class="table__element">234.00</td>
+                <td class="table__element">421,342.00</td>
+                <td class="table__element">cpl(200)</td>
               </tr>
-              <tr class="details__table-row">
-                <td class="details__table-element">aff/sam_test</td>
-                <td class="details__table-element">15/08/02 (12:58)</td>
-                <td class="details__table-element">232</td>
-                <td class="details__table-element">114</td>
-                <td class="details__table-element">12</td>
-                <td class="details__table-element">6</td>
-                <td class="details__table-element">3</td>
-                <td class="details__table-element">29,436.00</td>
-                <td class="details__table-element">941.00</td>
-                <td class="details__table-element">784,435.00</td>
-                <td class="details__table-element">cpl(200)</td>
+              <tr class="table__row">
+                <td class="table__element">aff/sam_test</td>
+                <td class="table__element">15/08/02 (12:58)</td>
+                <td class="table__element">232</td>
+                <td class="table__element">114</td>
+                <td class="table__element">12</td>
+                <td class="table__element">6</td>
+                <td class="table__element">3</td>
+                <td class="table__element">29,436.00</td>
+                <td class="table__element">941.00</td>
+                <td class="table__element">784,435.00</td>
+                <td class="table__element">cpl(200)</td>
               </tr>
-              <tr class="details__table-row">
-                <td class="details__table-element">aff/sam_test</td>
-                <td class="details__table-element">17/08/02 (12:58)</td>
-                <td class="details__table-element">232</td>
-                <td class="details__table-element">114</td>
-                <td class="details__table-element">12</td>
-                <td class="details__table-element">6</td>
-                <td class="details__table-element">3</td>
-                <td class="details__table-element">34,425.00</td>
-                <td class="details__table-element">234.00</td>
-                <td class="details__table-element">421,342.00</td>
-                <td class="details__table-element">cpl(200)</td>
+              <tr class="table__row">
+                <td class="table__element">aff/sam_test</td>
+                <td class="table__element">17/08/02 (12:58)</td>
+                <td class="table__element">232</td>
+                <td class="table__element">114</td>
+                <td class="table__element">12</td>
+                <td class="table__element">6</td>
+                <td class="table__element">3</td>
+                <td class="table__element">34,425.00</td>
+                <td class="table__element">234.00</td>
+                <td class="table__element">421,342.00</td>
+                <td class="table__element">cpl(200)</td>
               </tr>
-              <tr class="details__table-row">
-                <td class="details__table-element">aff/sam_test</td>
-                <td class="details__table-element">15/08/02 (12:58)</td>
-                <td class="details__table-element">232</td>
-                <td class="details__table-element">114</td>
-                <td class="details__table-element">12</td>
-                <td class="details__table-element">6</td>
-                <td class="details__table-element">3</td>
-                <td class="details__table-element">29,436.00</td>
-                <td class="details__table-element">941.00</td>
-                <td class="details__table-element">784,435.00</td>
-                <td class="details__table-element">cpl(200)</td>
+              <tr class="table__row">
+                <td class="table__element">aff/sam_test</td>
+                <td class="table__element">15/08/02 (12:58)</td>
+                <td class="table__element">232</td>
+                <td class="table__element">114</td>
+                <td class="table__element">12</td>
+                <td class="table__element">6</td>
+                <td class="table__element">3</td>
+                <td class="table__element">29,436.00</td>
+                <td class="table__element">941.00</td>
+                <td class="table__element">784,435.00</td>
+                <td class="table__element">cpl(200)</td>
               </tr>
             </tbody>
           </table>
         </div>
 
       </section>
-
+      <section id="banners" class="banners active"> <!--Links section-->
+        <div class="section-title">
+          <h1>Banners</h1>
+        </div>
+        <div class="btn-wrapper-center">
+          <a class="btn-primary" href="#">+ add new</a>
+        </div>
+        <div class="banners__table-wrapper">
+          <table class="table">
+            <tbody>
+              <tr class="table__row table__row--links">
+                <td class="table__element">
+                  <h2>Banner main</h2>
+                </td>
+                <td class="table__element">
+                  <a href="#">http://www.website.com/bannermain.gif</a>
+                </td>
+                <td class="table__element">
+                  <a href="#"><i class="icon-links"></i></a>
+                  <a href="#"><i class="icon-trash"></i></a>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__element">
+                  <h2>Sign up banner</h2>
+                </td>
+                <td class="table__element">
+                  <a href="#">http://www.website.com/signup.gif</a>
+                </td>
+                <td class="table__element">
+                  <a href="#"><i class="icon-links"></i></a>
+                  <a href="#"><i class="icon-trash"></i></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="btn-wrapper-center">
+          <a class="btn-primary" href="#">+ add new</a>
+        </div>
+      </section>
 
     </main>
 

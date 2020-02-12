@@ -1,0 +1,37 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table__row {
+  border-bottom: 1px solid $color-gray;
+
+  &:hover {
+    background: $color-lightgray;
+  }
+}
+
+.table__row--links {
+  border-top: 1px solid $color-gray;
+}
+
+.table__element {
+  padding: 5px;
+}
+
+/* Media */
+@media (max-width: 767px) {
+  .table {
+    text-align: center;
+    margin: 0;
+  }
+
+  .table__row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table__element {
+    min-height: 30px;
+  }
+}
