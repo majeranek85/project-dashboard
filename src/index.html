@@ -161,31 +161,7 @@
         </div>
         <div class="links__table-wrapper">
           <table class="table">
-            <tbody>
-              <tr class="table__row table__row--links">
-                <td class="table__element">
-                  <h2>Home page</h2>
-                </td>
-                <td class="table__element">
-                  <a href="#">http://www.homepage.com</a>
-                </td>
-                <td class="table__element">
-                  <a href="#"><i class="icon-links"></i></a>
-                  <a href="#"><i class="icon-trash"></i></a>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__element">
-                  <h2>Home page</h2>
-                </td>
-                <td class="table__element">
-                  <a href="#">http://www.homepage.com</a>
-                </td>
-                <td class="table__element">
-                  <a href="#"><i class="icon-links"></i></a>
-                  <a href="#"><i class="icon-trash"></i></a>
-                </td>
-              </tr>
+            <tbody class="links__table-body">
             </tbody>
           </table>
         </div>
@@ -381,7 +357,27 @@
 
     </main>
 
-    <script src="js/script.js"></script>
+    <script id="template-links-table" type="text/x-handlebars-template">
+      
+      <tr class="table__row table__row--links">
+        <td class="table__element">
+          <h2>{{title}}</h2>
+        </td>
+        <td class="table__element">
+          <a href="#">{{url}}</a>
+        </td>
+        <td class="table__element">
+          <a href="#"><i class="icon-links"></i></a>
+          <a href="#"><i class="icon-trash"></i></a>
+        </td>
+      </tr>
+      
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="db/data.js"></script>
+    <script src="js/app.js" type="module"></script>
   </body>
 </html>
 
