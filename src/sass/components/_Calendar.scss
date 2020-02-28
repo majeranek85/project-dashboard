@@ -6,7 +6,7 @@
   border: 1px solid $color-gray;
   border-radius: $radius-sm;
   position: relative;
-  height: 20px;
+  height: 40px;
   width: 100%;
   display: flex;
   padding: 10px;
@@ -17,7 +17,7 @@
 
   &:hover {
     border-color: $color-dark;
-  
+
     i {
       color: $color-dark;
     }

@@ -1,6 +1,6 @@
 @mixin btn($bg, $bg-hov, $col, $col-hov, $min-wd) {
   min-width: $min-wd;
-  height: 20px;
+  height: 40px;
   background: $bg;
   text-align: center;
   border-radius: $radius-sm;

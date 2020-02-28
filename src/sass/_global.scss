@@ -1,4 +1,8 @@
 /* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $font-main;
   font-weight: 300;
@@ -29,7 +33,7 @@ h1 {
 h2 {
   font-size: $base-size + 2;
   color: #a6a6a6;
-  font-weight: 700; 
+  font-weight: 700;
 }
 
 p {
