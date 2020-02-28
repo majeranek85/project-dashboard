@@ -20,7 +20,7 @@
   width: 100%;
   background: #fff;
   border-bottom: 1px solid $color-gray;
-  z-index: 9999;
+  z-index: 3;
 }
 
 .sidebar {
@@ -30,7 +30,7 @@
   left: 0;
   top: 50px;
   height: 100vh;
-  z-index: 9999;
+  z-index: 3;
 }
 
 .page {

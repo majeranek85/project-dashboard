@@ -1,5 +1,5 @@
 
-import dataSource from '../db/data.js';
+import {dataSource} from '../db/data.js';
 import Links from './components/Links.js';
 
 
@@ -80,42 +80,54 @@ const app = {
   },
 
   closeModal: function(){
-    document.getElementById('overlay').classList.remove('show');
+    const thisApp = this;
+
+    thisApp.overlay = document.getElementById('overlay').classList.remove('show');
+    console.log(thisApp.overlay);
   },
 
   initCloseModal: function(){
-    document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
+    const thisApp = this;
+
+    thisApp.btnClose = document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
       btn.addEventListener('click', function(e) {
         e.preventDefault();
-        this.closeModal();
+        thisApp.closeModal();
       });
     });
 
-    document.querySelector('#overlay').addEventListener('click', function(e) {
+    thisApp.overlayBg = document.querySelector('#overlay').addEventListener('click', function(e) {
       if(e.target === this) {
-        this.closeModal();
+        thisApp.closeModal();
       }
     });
 
-    document.addEventListener('keyup', function(e) {
+    thisApp.esc = document.addEventListener('keyup', function(e) {
       if(e.keyCode === 27) {
-        this.closeModal();
+        thisApp.closeModal();
       }
     });
   },
 
   openModal: function(modal) {
-    document.querySelectorAll('#overlay > *').forEach(function(modal) {
+    const thisApp = this;
+
+    thisApp.modals = document.querySelectorAll('#overlay > *').forEach(function(modal) {
       modal.classList.remove('show');
     });
-    document.querySelector('#overlay').classList.add('show');
-    document.querySelector(modal).classList.add('show');
+
+    thisApp.overlay = document.querySelector('#overlay').classList.add('show');
+    thisApp.modal = document.querySelector(modal).classList.add('show');
   },
 
   initOpenModal: function() {
-    document.querySelectorAll('.btn-primary').addEventListener('click', function(e) {
-      e.preventDefault();
-      this.openModal('#myModal');
+    const thisApp = this;
+
+    thisApp.btnInitModal = document.querySelectorAll('.btn-primary').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        thisApp.openModal('#myModal');
+      });
     });
   },
 
@@ -127,6 +139,7 @@ const app = {
     thisApp.initLinksTable();
     thisApp.initMobileMenu();
     thisApp.initCloseModal();
+    thisApp.initOpenModal();
   }
 };
 
