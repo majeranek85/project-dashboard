@@ -1,3 +1,9 @@
+.table-wrapper {
+  margin: 40px auto 0 auto;
+  width: 80%;
+  padding: 5px;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -11,27 +17,18 @@
   }
 }
 
-.table__row--links {
+.table__row:first-of-type {
   border-top: 1px solid $color-gray;
 }
 
 .table__element {
-  padding: 5px;
+  padding: 10px 5px;
 }
 
 /* Media */
 @media (max-width: 767px) {
-  .table {
-    text-align: center;
+  .table-wrapper {
     margin: 0;
-  }
-
-  .table__row {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .table__element {
-    min-height: 30px;
+    width: 100%;
   }
 }

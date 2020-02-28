@@ -44,11 +44,3 @@
   margin: 40px 0;
 }
 
-/* Tabs */
-.tab-one{
-  @include tabs(#80bfca); //further rename
-}
-
-.tab-two {
-  @include tabs($color-main); //further rename
-}

@@ -1,0 +1,20 @@
+/* Media */
+@media (max-width: 767px) {
+  .links .table,
+  .banners .table {
+    text-align: center;
+    margin: 0;
+  }
+
+  .links .table__row,
+  .banners .table__row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links .table__element,
+  .banners .table__element {
+    min-height: 30px;
+    padding: 5px;
+  }
+}

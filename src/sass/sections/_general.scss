@@ -2,7 +2,6 @@
   text-align: center;
   padding: 40px 0;
   border-bottom: 1px solid $color-lightgray;
-  margin-top: 20px;
 }
 
 .widgets {
@@ -48,12 +47,12 @@
   width: 100%;
   text-align: end;
 }
- 
+
 .chart {
   max-width: 70%;
   margin: 60px auto 0 auto;
 
-  img {
+  canvas {
     margin: 40px 0;
     width: 100%;
   }
