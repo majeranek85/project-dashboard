@@ -40,5 +40,8 @@
     "onchange": "^6.1.0",
     "stylelint": "^12.0.0",
     "stylelint-scss": "^3.13.0"
+  },
+  "dependencies": {
+    "copyfiles": "^2.2.0"
   }
 }
