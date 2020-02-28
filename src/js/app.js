@@ -52,7 +52,7 @@ const app = {
       );
     }
 
-    thisApp.toggleMenu();
+    thisApp.toggleMenu(false);
   },
 
   toggleMenu: function(visible) {
