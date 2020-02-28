@@ -1,6 +1,7 @@
 /* global Chart */
 import {dataSource} from '../db/data.js';
 import Links from './components/Links.js';
+import Banners from './components/Banners.js';
 
 
 const app = {
@@ -82,6 +83,14 @@ const app = {
 
     for (let linkData in thisApp.data.links){
       new Links (linkData, thisApp.data.links[linkData]);
+    }
+  },
+
+  initBannersTable: function(){
+    const thisApp = this;
+
+    for (let bannerData in thisApp.data.banners){
+      new Banners (bannerData, thisApp.data.banners[bannerData]);
     }
   },
 
@@ -182,6 +191,7 @@ const app = {
     thisApp.initData();
     thisApp.initPages();
     thisApp.initLinksTable();
+    thisApp.initBannersTable();
     thisApp.initMobileMenu();
     thisApp.initCloseModal();
     thisApp.initOpenModal();

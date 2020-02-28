@@ -46,3 +46,35 @@ dataSource.links = {
     url: 'http://www.twitter.com',
   },
 };
+
+dataSource.banners = {
+  bannermain: {
+    title: 'Banner main',
+    url: 'http://www.website.com/bannermain.gif',
+  },
+
+  signup: {
+    title: 'Sign up banner',
+    url: 'http://www.website.com/signup.gif',
+  },
+
+  leftside: {
+    title: 'Banner left side',
+    url: 'http://www.website.com/leftside.gif',
+  },
+
+  vert: {
+    title: 'Vertical banner',
+    url: 'http://www.website.com/vert.gif',
+  },
+
+  front: {
+    title: 'Front banner',
+    url: 'http://www.website.com/front.gif',
+  },
+
+  horizontal: {
+    title: 'Horizontal banner',
+    url: 'http://www.website.com/horizontal.gif',
+  },
+};
