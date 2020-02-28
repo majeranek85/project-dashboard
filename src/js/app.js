@@ -56,7 +56,10 @@ const app = {
   },
 
   toggleMenu: function(visible) {
-    this.navigation = document.querySelector('.navigation').classList.toggle('active', visible);
+    const thisApp = this;
+
+    thisApp.navigation = document.querySelector('.navigation').classList.toggle('active', visible);
+    thisApp.navigationTop = document.querySelector('.topbar__navigation').classList.toggle('active', visible);
   },
 
   initMobileMenu: function(){
