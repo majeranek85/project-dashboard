@@ -1,5 +1,5 @@
 /* global Handlebars */
-import utils from '../utils.js';
+import {utils} from '../utils.js';
 
 class Links {
   constructor(id, data){
