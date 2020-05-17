@@ -91,9 +91,7 @@
     <main id="pages" class="page">
 
       <section id="general" class="general"> <!--General section-->
-        <div class="section-title">
-          <h1>General statistic</h1>
-        </div>
+        <h1 class="section-title">General statistic</h1>
         <div class="general__calendar-wrapper">
           <form class="calendar">
             <div class="calendar__input-wrapper">
@@ -153,9 +151,7 @@
       </section>
 
       <section id="links" class="links active"> <!--Links section-->
-        <div class="section-title">
-          <h1>Links</h1>
-        </div>
+        <h1 class="section-title">Links</h1>
         <div class="btn-wrapper-center">
           <a class="btn-primary" href="#">+ add new</a>
         </div>
@@ -170,10 +166,8 @@
         </div>
       </section>
 
-      <section id="details" class="details">
-        <div class="section-title">
-          <h1>Detail Statistic</h1>
-        </div>
+      <section id="details" class="details"> <!--Details section-->
+        <h1 class="section-title">Detail Statistic</h1>
         <div class="details__calendar-wrapper">
           <form class="calendar">
             <div class="calendar__input-wrapper">
@@ -313,10 +307,9 @@
         </div>
 
       </section>
+
       <section id="banners" class="banners active"> <!--Banners section-->
-        <div class="section-title">
-          <h1>Banners</h1>
-        </div>
+        <h1 class="section-title">Banners</h1>
         <div class="btn-wrapper-center">
           <a class="btn-primary" href="#">+ add new</a>
         </div>
@@ -331,7 +324,46 @@
           <a class="btn-primary" href="#">+ add new</a>
         </div>
       </section>
+
+      <section id="personaldata" class="personaldata">
+        <h1 class="section-title">Personal data</h1>
+        <form action="" method="POST">
+          <div class="form-group">
+            <div class="field">
+              <label>Name</label>
+              <input type="text" name="user-name">
+            </div>
+            <div class="field">
+              <label>Surname</label>
+              <input type="text" name="user-surname">
+            </div>
+            <div class="field">
+              <label>E-mail</label>
+              <input type="email" name="user-email">
+            </div>
+            <div class="field">
+              <label>Phone number</label>
+              <input type="text" name="user-phone">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="field">
+              <label>Skype</label>
+              <input type="text" name="user-skype">
+            </div>
+            <div class="field">
+              <label>ICQ</label>
+              <input type="text" name="user-icq">
+            </div>
+            <div class="field">
+              <label>Msn</label>
+              <input type="text" name="user-msn">
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
+
     <div class="overlay" id="overlay">
       <div class="modal" id="myModal">
         <div class="btn-close js--close-modal">x</div>
