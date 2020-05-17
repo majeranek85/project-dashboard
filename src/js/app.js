@@ -26,11 +26,13 @@ const app = {
     thisApp.activatePage(pageMatchingHash);
 
     for (let link of thisApp.navLinks){
-      link.addEventListener('click', function(event){
+      link.addEventListener('click', function(event) {
         const clickedElement = this;
         event.preventDefault();
-
+        //console.log(clickedElement);
         const id = clickedElement.getAttribute('href').replace('#', '');
+
+
 
         thisApp.activatePage(id);
 
@@ -40,20 +42,19 @@ const app = {
   },
 
   activatePage: function(pageId){
-    const thisApp = this;
 
-    for (let page of thisApp.pages){
+    for (let page of this.pages){
       page.classList.toggle('active', page.id == pageId);
     }
 
-    for (let link of thisApp.navLinks){
+    for (let link of this.navLinks){
       link.classList.toggle(
         'active',
         link.getAttribute('href') == '#' + pageId
       );
     }
 
-    thisApp.toggleMenu(false);
+    this.toggleMenu(false);
   },
 
   toggleMenu: function(visible) {
@@ -64,25 +65,22 @@ const app = {
   },
 
   initMobileMenu: function(){
-    const thisApp = this;
 
-    thisApp.toggle = document.querySelector('.logo__mobile-menu-link').addEventListener('click', function(e) {
+    this.toggle = document.querySelector('.logo__mobile-menu-link').addEventListener('click', (e) => {
       e.preventDefault();
-      thisApp.toggleMenu();
+      this.toggleMenu();
     });
   },
 
   initData: function(){
-    const thisApp = this;
 
-    thisApp.data = dataSource;
+    this.data = dataSource;
   },
 
   initLinksTable: function(){
-    const thisApp = this;
 
-    for (let linkData in thisApp.data.links){
-      new Links (linkData, thisApp.data.links[linkData]);
+    for (let linkData in this.data.links){
+      new Links (linkData, this.data.links[linkData]);
     }
   },
 
@@ -102,69 +100,64 @@ const app = {
   },
 
   initCloseModal: function(){
-    const thisApp = this;
 
-    thisApp.btnClose = document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
-      btn.addEventListener('click', function(e) {
+    this.btnClose = document.querySelectorAll('#overlay .js--close-modal').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
         e.preventDefault();
-        thisApp.closeModal();
+        this.closeModal();
       });
     });
 
-    thisApp.overlayBg = document.querySelector('#overlay').addEventListener('click', function(e) {
+    this.overlayBg = document.querySelector('#overlay').addEventListener('click', (e) => {
       if(e.target === this) {
-        thisApp.closeModal();
+        this.closeModal();
       }
     });
 
-    thisApp.esc = document.addEventListener('keyup', function(e) {
+    this.esc = document.addEventListener('keyup', (e) => {
       if(e.keyCode === 27) {
-        thisApp.closeModal();
+        this.closeModal();
       }
     });
   },
 
   openModal: function(modal) {
-    const thisApp = this;
 
-    thisApp.modals = document.querySelectorAll('#overlay > *').forEach(function(modal) {
+    this.modals = document.querySelectorAll('#overlay > *').forEach((modal) => {
       modal.classList.remove('show');
     });
 
-    thisApp.overlay = document.querySelector('#overlay').classList.add('show');
-    thisApp.modal = document.querySelector(modal).classList.add('show');
+    this.overlay = document.querySelector('#overlay').classList.add('show');
+    this.modal = document.querySelector(modal).classList.add('show');
   },
 
   initOpenModal: function() {
-    const thisApp = this;
 
-    thisApp.btnInitModal = document.querySelectorAll('.btn-primary').forEach(function(btn) {
-      btn.addEventListener('click', function(e) {
+    this.btnInitModal = document.querySelectorAll('.btn-primary').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
         e.preventDefault();
-        thisApp.openModal('#myModal');
+        this.openModal('#myModal');
       });
     });
   },
 
   initChart: function() {
-    const thisApp = this;
 
     const ctx = document.getElementById('myChart').getContext('2d');
 
-    thisApp.chart = new Chart(ctx, thisApp.data.chart);
+    this.chart = new Chart(ctx, this.data.chart);
   },
 
   init: function(){
-    const thisApp = this;
 
-    thisApp.initData();
-    thisApp.initPages();
-    thisApp.initLinksTable();
-    thisApp.initBannersTable();
-    thisApp.initMobileMenu();
-    thisApp.initCloseModal();
-    thisApp.initOpenModal();
-    thisApp.initChart();
+    this.initData();
+    this.initPages();
+    this.initLinksTable();
+    this.initBannersTable();
+    this.initMobileMenu();
+    this.initCloseModal();
+    this.initOpenModal();
+    this.initChart();
   }
 };
 
