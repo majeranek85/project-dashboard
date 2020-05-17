@@ -27,10 +27,13 @@
   display: inline-flex;
   border-bottom: 1px solid $color-gray;
 
-  h2 {
+  span {
     flex: 0 0 80%;
     margin: 0;
     padding-bottom: 5px;
+    font-size: $base-size + 2;
+    color: #a6a6a6;
+    font-weight: 700;
   }
 }
 

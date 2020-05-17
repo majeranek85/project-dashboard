@@ -1,4 +1,11 @@
 /* Buttons */  //further rename
+button {
+  background: none;
+  border: none;
+  box-shadow: unset;
+  padding: unset;
+}
+
 .btn-primary {
   @include btn ($color-main, $color-main-hov, $color-light, $color-light, 126px);
 }
