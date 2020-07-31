@@ -3,7 +3,7 @@
     display: none;
   }
 
-  > .active {
+  > .page--active {
     display: block;
   }
 }
@@ -55,7 +55,7 @@
     display: none;
   }
 
-  .navigation.active {
+  .navigation.menu--active {
     display: block;
   }
 

@@ -32,8 +32,6 @@ const app = {
         //console.log(clickedElement);
         const id = clickedElement.getAttribute('href').replace('#', '');
 
-
-
         thisApp.activatePage(id);
 
         window.location.hash = '#/' + id;
@@ -44,12 +42,12 @@ const app = {
   activatePage: function(pageId){
 
     for (let page of this.pages){
-      page.classList.toggle('active', page.id == pageId);
+      page.classList.toggle('page--active', page.id == pageId);
     }
 
     for (let link of this.navLinks){
       link.classList.toggle(
-        'active',
+        'page--active',
         link.getAttribute('href') == '#' + pageId
       );
     }
@@ -60,8 +58,8 @@ const app = {
   toggleMenu: function(visible) {
     const thisApp = this;
 
-    thisApp.navigation = document.querySelector('.navigation').classList.toggle('active', visible);
-    thisApp.navigationTop = document.querySelector('.topbar__navigation').classList.toggle('active', visible);
+    thisApp.navigation = document.querySelector('.navigation').classList.toggle('menu--active', visible);
+    thisApp.navigationTop = document.querySelector('.topbar__navigation').classList.toggle('menu--active', visible);
   },
 
   initMobileMenu: function(){

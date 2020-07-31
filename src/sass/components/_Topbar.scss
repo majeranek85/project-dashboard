@@ -24,6 +24,7 @@
   flex: 1;
   font-size: 20px;
   padding: 15px;
+  display: none;
 }
 
 .topbar {
@@ -32,7 +33,7 @@
   justify-content: flex-end;
 
   i {
-    padding: 15px;  
+    padding: 15px;
   }
 }
 
@@ -40,7 +41,7 @@
   display: inline-flex;
 }
 
-.topbar__price-widget, 
+.topbar__price-widget,
 .topbar__profile-widget {
   padding: 15px 0;
   border-left: 1px solid $color-lightgray;
@@ -68,16 +69,28 @@
     top: 13px;
     right: 13px;
   }
+
+  &:hover {
+    color: $color-main;
+  }
 }
 
 .topbar .icon-quit {  //further rename
   border-left: 1px solid $color-lightgray;
+
+  &:hover {
+    color: $color-main;
+  }
 }
 
 /* Media */
 @media (max-width: 767px) {
   .logo {
     width: 100%;
+  }
+
+  .logo__icon {
+    display: block;
   }
 
   .topbar {
@@ -94,7 +107,7 @@
     border-bottom: 1px solid #bababa;
     display: none;
 
-    &.active {
+    &.menu--active {
       display: block;
     }
   }
